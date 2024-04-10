@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From the internet’s most reliable source of how-to guides, leverage the strength of artificial intelligence to navigate life’s challenges - from repairing your washing machine to discovering romance">
+    <meta name="keywords" content="how to, how,tips">
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczPnaXH6cg4rRSezIRU64H3GkR8mTOvQL0zDdeLt41jvZ8VGrKpc-65lAnqUbMabik0L6CMGid78JVrRv9wQJHXEeCAAdhtrxpYLMojVzYi96_7hMXMWZxt3tvtVLnuwpg3XbXtm4r8zbMBEAWy_6SmB=w913-h913-s-no-gm?authuser=0" type="image/x-icon">
+    <title>Welcome to Solulu4u</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBZP4M2166"></script>
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N786BFXKX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N786BFXKX9');
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://speak.id.vn">Home</a>
+        </nav>
+        <h1>Trang chủ</h1>
+        <form action="#">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </header> 
+    <div id="container">
+        <aside id="left-ad">
+            <div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8152334858757456"
+                crossorigin="anonymous"></script></div>
+        </aside>
+        <main>
+            <!-- Display the titles and descriptions -->
+            {% for title, description, file_name in titles_descriptions_filenames %}
+            <section>
+                <h2><a href="/{{ file_name }}">{{ title }}</a></h2>
+                <p>{{ description }}</p>
+            </section>
+            {% endfor %}
+
+            <div>
+                <!-- Display the navigation buttons -->
+                {% if prev_page %}
+                <button onclick="window.location.href='/?page={{ prev_page }}'">Trước</button>
+                {% endif %}
+                {% if next_page %}
+                <button onclick="window.location.href='/?page={{ next_page }}'">Tiếp theo</button>
+                {% endif %}
+            </div>
+        </main>
+        <aside id="right-ad">
+            
+        </aside>
+    </div>
+    
+    <footer>
+        <p>© 2024 Copyright belongs to Solulu4u</p>
+        <p>Contact: solulu4u@gmail.com</p>
+    </footer>
+</body>
+</html>

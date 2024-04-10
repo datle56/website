@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Excel's capabilities extend far beyond numerical calculations, embracing the realm of visual presentation. Incorporating images into spreadsheets can enhance clarity and engagement. But what if your images don't fit perfectly into their assigned cells, distorting their intended impact? Fret not! This comprehensive guide will empower you with the knowledge and techniques to effortlessly resize images in Excel cells, ensuring they align seamlessly and showcase your data with finesse.">
+    <meta name="keywords" content=" resizing images in excel, excel cell image resizing, adjust image size in excel, lock image in excel cell, resize image in excel using VBA code, automate image resizing in excel">
+    <title>Effortlessly Insert Images in Excel with Auto-Size Functionality
+</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczPnaXH6cg4rRSezIRU64H3GkR8mTOvQL0zDdeLt41jvZ8VGrKpc-65lAnqUbMabik0L6CMGid78JVrRv9wQJHXEeCAAdhtrxpYLMojVzYi96_7hMXMWZxt3tvtVLnuwpg3XbXtm4r8zbMBEAWy_6SmB=w913-h913-s-no-gm?authuser=0" type="image/x-icon">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N786BFXKX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N786BFXKX9');
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.solulu4u.com">Home</a>
+        </nav>
+        <h1>Effortlessly Insert Images in Excel with Auto-Size Functionality
+</h1>
+        <form action="#">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </header> 
+    <div id="container">
+        <aside id="left-ad">
+
+        </aside>
+        <main>
+            <section>
+                <br>
+                <div><p><strong>Master the Art of Resizing Images in Excel Cells: Unlock Visual Precision</strong></p>
+
+<p>Excel's capabilities extend far beyond numerical calculations, embracing the realm of visual presentation. Incorporating images into spreadsheets can enhance clarity and engagement. But what if your images don't fit perfectly into their assigned cells, distorting their intended impact? Fret not! This comprehensive guide will empower you with the knowledge and techniques to effortlessly resize images in Excel cells, ensuring they align seamlessly and showcase your data with finesse.</p>
+</div>
+                
+            </section>
+            <section>
+                <br>
+                <div> <h2>Resizing Images in Excel Cells: A Comprehensive Guide</h2>
+
+<p>Inserting images into Excel cells can enhance the visual appeal and convey information more effectively. However, it's crucial to resize images appropriately to maintain readability and ensure they align with the cell dimensions. This guide provides step-by-step instructions and alternative methods for resizing images in Excel cells.</p>
+
+<h3>Step 1: Insert an Image</h3>
+
+<ol>
+<li>Navigate to the "Insert" tab on the ribbon.</li>
+<li>In the "Illustrations" group, click the "Pictures" button.</li>
+<li>Select the desired image from your computer or an online source.</li>
+</ol>
+
+<h3>Step 2: Manually Resize the Image</h3>
+
+<ol>
+<li>Once the image is inserted, it will be surrounded by a bounding box with eight small squares called "handles."</li>
+<li>Click and drag the handles to adjust the image size manually.</li>
+<li>Hold down the "Shift" key while dragging to maintain the aspect ratio (proportions) of the image.</li>
+</ol>
+
+<h3>Step 3: Specify Image Height and Width</h3>
+
+<ol>
+<li>Select the image and navigate to the "Format" tab on the ribbon.</li>
+<li>In the "Size" group, locate the "Height" and "Width" fields.</li>
+<li>Enter specific values in pixels or as a percentage of the original size to resize the image precisely.</li>
+</ol>
+
+<h3>Step 4: Lock the Image Size to the Cell</h3>
+
+<ol>
+<li>Right-click on the image and select "Format Picture" from the context menu.</li>
+<li>Navigate to the "Size &amp; Properties" tab.</li>
+<li>Under the "Move and size with cells" section, select the "Move and size with cells" checkbox.</li>
+<li>This action ensures that the image remains aligned with the cell size even when the cell is resized.</li>
+</ol>
+
+<h3>Step 5: Alternative Method Using VBA Code</h3>
+
+<ol>
+<li>Press Alt + F11 to open the VBA (Visual Basic for Applications) window.</li>
+<li>Click "Insert" &gt; "Module" to create a new module.</li>
+<li>Paste the following VBA code into the module:</li>
+</ol>
+
+<p>```
+Sub ResizeImagesToCells()
+    Dim rng As Range
+    Dim shp As Shape</p>
+
+<pre><code>Set rng = Selection
+For Each shp In rng.Shapes
+    shp.Width = shp.Parent.Width
+    shp.Height = shp.Parent.Height
+Next
+</code></pre>
+
+<p>End Sub
+```</p>
+
+<ol start="4">
+<li>Press F5 to run the VBA code.</li>
+<li>This code will automatically resize all the selected images to fit their respective cells, preserving their proportions.</li>
+</ol>
+
+<h3>Additional Notes</h3>
+
+<ul>
+<li>When manually resizing an image, holding down the "Alt" key allows you to adjust the image size proportionally from the center.</li>
+<li>If you want to reset the image size to its original dimensions, select the image and press Ctrl + Z to undo the resizing.</li>
+<li>To delete an inserted image, select it and press the Delete key.</li>
+</ul>
+ </div>
+                
+            </section>
+            <section>
+                <br>
+                <div><p><strong>Conclusion:</strong></p>
+
+<p>Resizing images in Excel cells is a simple yet powerful task that can enhance the efficiency and visual appeal of your spreadsheets. By following the methods outlined above, you can easily adjust image sizes manually, lock them to cells to maintain alignment, or automate the process using VBA code. Remember to consider the context and purpose of the image when resizing to ensure it aligns with your goals. With a few clicks or code lines, you can effectively resize images and optimize the functionality and appearance of your Excel workbooks.</p>
+ </div>
+                
+            </section>
+        </main>
+        <aside id="right-ad">
+
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 Copyright belongs to Solulu4u</p>
+        <p>Contact: solulu4u@gmail.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.7; /* Increased line-height for better spacing between lines */
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 8px; /* Default browser margin */
+}
+
+/* Container */
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Ads */
+.ad {
+    display: flex;
+    flex-direction: column;
+    width: 15%; /* Adjust as needed */
+}
+
+.ad-item {
+    margin-bottom: 20px; /* Adjust as needed */
+    /* Add additional styling for the ads here */
+}
+
+/* Content */
+main {
+    width: calc(100% - 20%); /* Adjust as needed */
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Header */
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+nav a {
+    font-size: 18px; /* Adjust font size to match title */
+    font-weight: bold; /* Make text bold */
+    color: #fff; /* Change color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+h1 {
+    font-size: 20px; /* Adjust font size */
+    max-width: 75%; /* Limit width to 60% of the header width */
+    overflow: hidden; /* Hide text that exceeds the width */
+    text-overflow: ellipsis; /* Add an ellipsis when the text overflows */
+    margin: 0 auto; /* Center the title */
+    text-align: center; /* Center-align the text */
+    word-wrap: break-word; /* Break word when it exceeds the width */
+    white-space: normal; /* Allow wrapping of long text */
+    margin-left: 8%;
+    
+}
+
+
+form input[type="text"] {
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #bdc3c7; /* Add a border */
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Unordered List */
+ul {
+    list-style-type: disc; /* Default browser list style */
+    padding-left: 40px; /* Default browser padding */
+}
+
+/* Ordered List */
+ol {
+    list-style-type: decimal; /* Default browser list style */
+    padding-left: 40px; /* Default browser padding */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* Container */
+    #container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Ads */
+    .ad {
+        width: 100%;
+    }
+
+    /* Content */
+    main {
+        width: 100%;
+        margin-top: 20px; /* Add space between header and main content */
+    }
+
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+}
+/* Header */
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* Container */
+    #container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Ads */
+    .ad {
+        width: 100%;
+    }
+
+    /* Content */
+    main {
+        width: 100%;
+        margin-top: 20px; /* Add space between header and main content */
+    }
+
+    /* Header */
+    header {
+        padding: 10px;
+        flex-direction: column; /* Stack the nav and h1 vertically */
+    }
+
+    /* Nav */
+    nav {
+        margin-bottom: 10px; /* Add some space between the nav and h1 */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In the realm of computers, numbers take on a different form, a digital ballet of 0s and 1s. Join us as we dive into the fascinating world of IEEE 754, where we unravel the code that allows computers to understand and manipulate the very numbers that fuel our digital world.IEEE 754 is not just a technical standard; it's the Rosetta Stone of numerical translation, bridging the gap between human and machine. Imagine a secret cipher that computers use to whisper the language of numbers among themselves. IEEE 754 is that cipher, enabling computers to comprehend the complexities of our real-world numbers.In this guide, we will unveil the steps of this conversion process, a step-by-step dance where decimal digits transform into a symphony of binary code. We will witness the magic as whole numbers and decimals intertwine, morphing into scientific notation, only to be sliced and diced into sign, exponent, and mantissa.Let us begin this journey of numerical discovery, where we decode the intricate secrets of IEEE 754 and unlock the power of computers to handle numbers like never before.">
+    <meta name="keywords" content="IEEE 754, Floating Point, Binary Representation, Single Precision, Double Precision, IEEE, Computer Numbers, IEEE 754 Format, Computer Number Storage, Number Conversion">
+    <title>Step-by-Step Guide to Converting Decimal Numbers to IEEE 754 Floating Point Format
+</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczPnaXH6cg4rRSezIRU64H3GkR8mTOvQL0zDdeLt41jvZ8VGrKpc-65lAnqUbMabik0L6CMGid78JVrRv9wQJHXEeCAAdhtrxpYLMojVzYi96_7hMXMWZxt3tvtVLnuwpg3XbXtm4r8zbMBEAWy_6SmB=w913-h913-s-no-gm?authuser=0" type="image/x-icon">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N786BFXKX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N786BFXKX9');
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.solulu4u.com">Home</a>
+        </nav>
+        <h1>Step-by-Step Guide to Converting Decimal Numbers to IEEE 754 Floating Point Format
+</h1>
+        <form action="#">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </header> 
+    <div id="container">
+        <aside id="left-ad">
+
+        </aside>
+        <main>
+            <section>
+                <br>
+                <div><p><strong>Unveiling the Secrets of IEEE 754: How Computers Dance with Numbers</strong></p>
+
+<p>In the realm of computers, numbers take on a different form, a digital ballet of 0s and 1s. Join us as we dive into the fascinating world of IEEE 754, where we unravel the code that allows computers to understand and manipulate the very numbers that fuel our digital world.</p>
+
+<p>IEEE 754 is not just a technical standard; it's the Rosetta Stone of numerical translation, bridging the gap between human and machine. Imagine a secret cipher that computers use to whisper the language of numbers among themselves. IEEE 754 is that cipher, enabling computers to comprehend the complexities of our real-world numbers.</p>
+
+<p>In this guide, we will unveil the steps of this conversion process, a step-by-step dance where decimal digits transform into a symphony of binary code. We will witness the magic as whole numbers and decimals intertwine, morphing into scientific notation, only to be sliced and diced into sign, exponent, and mantissa.</p>
+
+<p>Let us begin this journey of numerical discovery, where we decode the intricate secrets of IEEE 754 and unlock the power of computers to handle numbers like never before.</p>
+</div>
+                
+            </section>
+            <section>
+                <br>
+                <div> <h2>Converting Numbers to IEEE 754 Format: A Comprehensive Guide</h2>
+
+<p>Computers, unlike humans, represent numbers in a binary format, utilizing a system restricted to two values: 0 and 1. The IEEE 754 standard establishes a framework for this binary representation of numbers.</p>
+
+<h3>Step-by-Step Conversion Process</h3>
+
+<p><strong>1. Separating the Whole and Decimal Parts</strong></p>
+
+<p>Begin by dividing the number into its integral component, known as the whole number, and its fractional component, represented by the decimal. For instance, if we have the number 85.125, the whole number is 85 and the decimal portion is 0.125.</p>
+
+<p><strong>2. Converting to Binary</strong></p>
+
+<p>The next step involves converting both the whole number (85) and the decimal (0.125) to their binary equivalents. In our example, 85 is represented as 1010101 in binary, while 0.125 translates to 0.001 in binary.</p>
+
+<p><strong>3. Combining the Binary Parts</strong></p>
+
+<p>Once we have the binary representations, we concatenate the whole number and the decimal, separated by a decimal point. In our case, we obtain 1010101.001.</p>
+
+<p><strong>4. Converting to Scientific Notation</strong></p>
+
+<p>The following step entails converting the combined binary number to scientific notation. This involves shifting the decimal point to the right until it resides after the initial digit, creating an exponent in base 2. In our example, this yields 01.010101001 * 2^-6.</p>
+
+<p><strong>5. Determining the Sign</strong></p>
+
+<p>If the original number is positive, the sign bit is set to 0; conversely, for negative numbers, the sign bit is set to 1. In our case, since 85.125 is positive, the sign bit is 0.</p>
+
+<p><strong>6. Extracting the Exponent</strong></p>
+
+<p>We utilize the exponent from the scientific notation (133) and convert it to its binary form, which is 10000101 in our example.</p>
+
+<p><strong>7. Identifying the Mantissa</strong></p>
+
+<p>The mantissa is obtained by removing the first digit of the scientific notation result and copying the remaining decimal portion. In our case, this yields 010101001.</p>
+
+<p><strong>8. Assembling the Components</strong></p>
+
+<p>Finally, we combine the sign, exponent, and mantissa in the following order:</p>
+
+<ul>
+<li>Sign bit: 0</li>
+<li>Exponent: 10000101</li>
+<li>Mantissa: 010101001000000000000000</li>
+</ul>
+
+<p>To meet the precision requirements for single-precision, we add leading zeros to the mantissa, resulting in a total of 32 bits:</p>
+
+<p><strong>0 10000101 01010100100000000000000</strong></p>
+
+<p>This binary representation constitutes the IEEE 754 single-precision format for the number 85.125.</p>
+ </div>
+                
+            </section>
+            <section>
+                <br>
+                <div><p><strong>Conclusion:</strong></p>
+
+<p>Converting numbers to IEEE 754 format is a fundamental step in computer science. By following the outlined steps, you can accurately represent numbers in the binary format used by computers. This conversion allows for efficient storage, processing, and exchange of numerical data across various computing systems. Understanding IEEE 754 is crucial for programmers and engineers who work with computer architectures, data structures, and numerical applications. It provides a standardized way to handle numerical representations, ensuring compatibility and precision in the digital world.</p>
+ </div>
+                
+            </section>
+        </main>
+        <aside id="right-ad">
+
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 Copyright belongs to Solulu4u</p>
+        <p>Contact: solulu4u@gmail.com</p>
+    </footer>
+</body>
+</html>

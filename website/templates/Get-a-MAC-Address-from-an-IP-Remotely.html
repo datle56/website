@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In the realm of networking, knowing the MAC and IP addresses of devices is crucial for managing and troubleshooting your infrastructure. This guide empowers you with three powerful methods to locate these essential identifiers, ensuring seamless network connectivity and efficient troubleshooting.">
+    <meta name="keywords" content="arp command, Mac address, ip address, command prompt, terminal, ping, arp, getmac command, Windows, remote access, nmap, network scan">
+    <title>Discover three straightforward methods to remotely retrieve MAC addresses associated with given IP addresses.
+</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczPnaXH6cg4rRSezIRU64H3GkR8mTOvQL0zDdeLt41jvZ8VGrKpc-65lAnqUbMabik0L6CMGid78JVrRv9wQJHXEeCAAdhtrxpYLMojVzYi96_7hMXMWZxt3tvtVLnuwpg3XbXtm4r8zbMBEAWy_6SmB=w913-h913-s-no-gm?authuser=0" type="image/x-icon">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N786BFXKX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N786BFXKX9');
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.solulu4u.com">Home</a>
+        </nav>
+        <h1>Discover three straightforward methods to remotely retrieve MAC addresses associated with given IP addresses.
+</h1>
+        <form action="#">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </header> 
+    <div id="container">
+        <aside id="left-ad">
+
+        </aside>
+        <main>
+            <section>
+                <br>
+                <div><p><strong>Unveiling the Secrets of Network Discovery: A Comprehensive Guide to Finding MAC and IP Addresses</strong></p>
+
+<p>In the realm of networking, knowing the MAC and IP addresses of devices is crucial for managing and troubleshooting your infrastructure. This guide empowers you with three powerful methods to locate these essential identifiers, ensuring seamless network connectivity and efficient troubleshooting.</p>
+</div>
+                
+            </section>
+            <section>
+                <br>
+                <div> <p><strong>Using the Arp Command</strong></p>
+
+<p>The Address Resolution Protocol (ARP) is a networking protocol used to map Internet Protocol (IP) addresses to physical Media Access Control (MAC) addresses. The ARP command can be used to find the MAC address of a computer on your network.</p>
+
+<p>To find the MAC address of a computer on your network using the ARP command:</p>
+
+<ol>
+<li><strong>Open a command prompt or terminal window.</strong></li>
+</ol>
+
+<ul>
+<li>In Windows, press the Windows key + R to open the Run dialog box. Type "cmd" and press Enter to open a command prompt.</li>
+<li>In macOS, open the Terminal application from the Applications folder.</li>
+<li>In Linux, open a terminal window by pressing Ctrl + Alt + T.</li>
+</ul>
+
+<ol start="2">
+<li><strong>Run <code>ping &lt;ip address&gt;</code> to contact the computer.</strong></li>
+</ol>
+
+<p>Replace <code>&lt;ip address&gt;</code> with the IP address of the computer you want to find the MAC address of. The ping command will send a series of packets to the specified IP address and wait for a response.</p>
+
+<ol start="3">
+<li><strong>Run <code>arp -a &lt;ip address&gt;</code> to see the MAC address listed.</strong></li>
+</ol>
+
+<p>Replace <code>&lt;ip address&gt;</code> with the same IP address you used in the previous step. The arp -a command will display a list of all the IP addresses and MAC addresses that it has cached. The MAC address of the computer you are looking for will be listed next to its IP address.</p>
+
+<p><strong>Using the Getmac Command (Windows)</strong></p>
+
+<p>The getmac command is a Windows-specific command that can be used to view all of the MAC addresses on a device. This command is only available on Windows XP and later operating systems.</p>
+
+<p>To use the getmac command:</p>
+
+<ol>
+<li><strong>Open a command prompt as administrator.</strong></li>
+</ol>
+
+<ul>
+<li>Press the Windows key + R to open the Run dialog box.</li>
+<li>Type "cmd" and press Shift + Ctrl + Enter to open a command prompt as administrator.</li>
+</ul>
+
+<ol start="2">
+<li><strong>Run <code>getmac</code> to view all MAC addresses on the device.</strong></li>
+</ol>
+
+<p>The getmac command will display a list of all the MAC addresses on the device. The MAC addresses will be listed in the following format:</p>
+
+<p><code>
+Interface Name: Ethernet
+MAC Address: 00:11:22:33:44:55
+</code></p>
+
+<p><strong>Scanning with Nmap</strong></p>
+
+<p>Nmap is a free and open-source network scanner that can be used to scan your network for all MAC and IP addresses. Nmap is available for Windows, macOS, and Linux.</p>
+
+<p>To scan your network for all MAC and IP addresses using Nmap:</p>
+
+<ol>
+<li><strong>Install Nmap on your computer.</strong></li>
+</ol>
+
+<p>You can download Nmap from the official Nmap website: https://nmap.org/.</p>
+
+<ol start="2">
+<li><p><strong>Open a command prompt or terminal window.</strong></p></li>
+<li><p><strong>Run <code>nmap -sn &lt;network address&gt;</code> to scan the network.</strong></p></li>
+</ol>
+
+<p>Replace <code>&lt;network address&gt;</code> with the IP address range of the network you want to scan. For example, to scan the 192.168.1.0/24 network, you would run the following command:</p>
+
+<p><code>
+nmap -sn 192.168.1.0/24
+</code></p>
+
+<p>Nmap will scan the specified network and display a list of all the IP addresses and MAC addresses that it finds. The results of the scan will be displayed in a table format. The table will include the following information:</p>
+
+<ul>
+<li><strong>IP Address:</strong> The IP address of the device.</li>
+<li><strong>MAC Address:</strong> The MAC address of the device.</li>
+<li><strong>Host:</strong> The hostname of the device (if available).</li>
+<li><strong>Status:</strong> The status of the device (e.g., online, offline, down).</li>
+</ul>
+ </div>
+                
+            </section>
+            <section>
+                <br>
+                <div><p><strong>Conclusion:</strong></p>
+
+<p>Finding the MAC address of a computer on a network can be done through various methods, depending on the operating system and access level. The arp command effectively retrieves MAC addresses on Linux and macOS, while the getmac command conveniently provides them on Windows computers. Nmap offers a comprehensive network scanning approach, listing both MAC and IP addresses for all devices on the network. These techniques are essential for network troubleshooting, inventory management, and maintaining a secure and organized network infrastructure.</p>
+ </div>
+                
+            </section>
+        </main>
+        <aside id="right-ad">
+
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 Copyright belongs to Solulu4u</p>
+        <p>Contact: solulu4u@gmail.com</p>
+    </footer>
+</body>
+</html>

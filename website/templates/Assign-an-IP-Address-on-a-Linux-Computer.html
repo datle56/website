@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In the realm of networking, assigning a static IP address to your Linux machine can be likened to giving it a permanent postal address. It ensures your device has a stable and identifiable presence on your network, allowing for seamless communication and remote access. Whether you're an IT whiz or a networking novice, this step-by-step guide will empower you to effortlessly configure static IP addresses on your Linux device, paving the way for enhanced stability and control.">
+    <meta name="keywords" content="Linux IP configuration, Change Linux IP address, Debian network configuration, Ubuntu network settings, Mint network settings, Red Hat network settings, CentOS network configuration, Fedora network configuration, Linux network management, Set static IP address Linux, Configure network settings Linux">
+    <title>Assign an IP Address to Your Linux Machine: A Step-by-Step Guide with Visual Aids
+</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczPnaXH6cg4rRSezIRU64H3GkR8mTOvQL0zDdeLt41jvZ8VGrKpc-65lAnqUbMabik0L6CMGid78JVrRv9wQJHXEeCAAdhtrxpYLMojVzYi96_7hMXMWZxt3tvtVLnuwpg3XbXtm4r8zbMBEAWy_6SmB=w913-h913-s-no-gm?authuser=0" type="image/x-icon">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N786BFXKX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N786BFXKX9');
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.solulu4u.com">Home</a>
+        </nav>
+        <h1>Assign an IP Address to Your Linux Machine: A Step-by-Step Guide with Visual Aids
+</h1>
+        <form action="#">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </header> 
+    <div id="container">
+        <aside id="left-ad">
+
+        </aside>
+        <main>
+            <section>
+                <br>
+                <div><p><strong>Unlock the Secrets of Static IP Configuration: A Comprehensive Guide</strong></p>
+
+<p>In the realm of networking, assigning a static IP address to your Linux machine can be likened to giving it a permanent postal address. It ensures your device has a stable and identifiable presence on your network, allowing for seamless communication and remote access. Whether you're an IT whiz or a networking novice, this step-by-step guide will empower you to effortlessly configure static IP addresses on your Linux device, paving the way for enhanced stability and control.</p>
+</div>
+                
+            </section>
+            <section>
+                <br>
+                <div> <p><strong>Method 1: Debian, Ubuntu, Linux Mint</strong></p>
+
+<p><strong>1. Find Your Linux Version:</strong></p>
+
+<p>Open the Terminal application and type the following command:</p>
+
+<p><code>
+lsb_release -a
+</code></p>
+
+<p>This will display your Linux distribution name and version.</p>
+
+<p><strong>2. Open the Terminal App:</strong></p>
+
+<p>Click on the terminal icon on your desktop or press "Ctrl" + "Alt" + "T" to open the Terminal application.</p>
+
+<p><strong>3. Switch to the "Root" User:</strong></p>
+
+<p>Enter the following command and provide the root password when prompted:</p>
+
+<p><code>
+sudo su
+</code></p>
+
+<p><strong>4. List Your Network Devices:</strong></p>
+
+<p>Use the following command to list all network devices:</p>
+
+<p><code>
+ip addr
+</code></p>
+
+<p>This will display a list of network interfaces, each with its name (e.g., "eth0" or "wifi0").</p>
+
+<p><strong>5. Select the Device You Want to Change:</strong></p>
+
+<p>Identify the device for which you want to change the IP address. If you want to change the IP address for your Ethernet connection, look for the device name starting with "eth". If you want to change the IP address for your Wi-Fi connection, look for the device name starting with "wifi".</p>
+
+<p><strong>6. Assign a New IP Address to the Device:</strong></p>
+
+<p>Use the following command to assign a new IP address to the selected device, replacing "eth0" with the actual device name and "192.168.1.100" with the desired IP address:</p>
+
+<p><code>
+ifconfig eth0 192.168.1.100
+</code></p>
+
+<p><strong>7. Add a Default Gateway for Internet Access:</strong></p>
+
+<p>Specify the default gateway (usually the IP address of your router) to allow the device to access the Internet:</p>
+
+<p><code>
+route add default gw 192.168.1.1
+</code></p>
+
+<p><strong>8. Add a DNS Server for DNS Resolution:</strong></p>
+
+<p>Add a DNS server (e.g., Google's public DNS server) to enable the device to resolve domain names:</p>
+
+<p><code>
+echo "nameserver 8.8.8.8" &gt;&gt; /etc/resolv.conf
+</code></p>
+
+<p><strong>Method 2: Red Hat, CentOS, Fedora</strong></p>
+
+<p><strong>1. Find Your Linux Version:</strong></p>
+
+<p>Open the Terminal application and type the following command:</p>
+
+<p><code>
+cat /etc/os-release
+</code></p>
+
+<p>This will display your Linux distribution name and version.</p>
+
+<p><strong>2. Open the Terminal App:</strong></p>
+
+<p>Click on the terminal icon on your desktop or press "Ctrl" + "Alt" + "T" to open the Terminal application.</p>
+
+<p><strong>3. Switch to the "Root" User:</strong></p>
+
+<p>Enter the following command and provide the root password when prompted:</p>
+
+<p><code>
+sudo su
+</code></p>
+
+<p><strong>4. List Your Network Devices:</strong></p>
+
+<p>Use the following command to list all network devices:</p>
+
+<p><code>
+nmcli dev list
+</code></p>
+
+<p>This will display a list of network interfaces, each with its name (e.g., "eno12345678").</p>
+
+<p><strong>5. Switch to the Network Scripts Directory:</strong></p>
+
+<p>Navigate to the network scripts directory:</p>
+
+<p><code>
+cd /etc/sysconfig/network-scripts
+</code></p>
+
+<p><strong>6. Display the Network Options for the Device You Want to Change:</strong></p>
+
+<p>Use the following command to display the network options for the selected device, replacing "eno12345678" with the actual device name:</p>
+
+<p><code>
+cat ifcfg-eno12345678
+</code></p>
+
+<p><strong>7. Edit the Network Options:</strong></p>
+
+<p>Open the network options file for editing:</p>
+
+<p><code>
+vi ifcfg-eno12345678
+</code></p>
+
+<p>Make the following changes to the file:</p>
+
+<ul>
+<li><strong>BOOTPROTO</strong>: Change "dhcp" to "none" (static IP address)</li>
+<li><strong>IPV6 entries</strong>: Delete any lines related to IPv6 (e.g., "IPV6ADDR")</li>
+<li><strong>ONBOOT</strong>: Change "no" to "yes" (enable the device on boot)</li>
+<li><strong>IPADDR</strong>: Enter a new IP address, replacing "192.168.2.23" (e.g., 192.168.1.100)</li>
+<li><strong>PREFIX</strong>: Enter the prefix or netmask, replacing "24" or "255.255.255.0" (e.g., 24 or 255.255.255.0)</li>
+<li><strong>GATEWAY</strong>: Enter your gateway address (usually the IP address of your router), replacing "192.168.2.1" (e.g., 192.168.1.1)</li>
+</ul>
+
+<p><strong>8. Save and Exit the File:</strong></p>
+
+<p>Press "Esc" to enter command mode, then type ":wq" to save and exit.</p>
+
+<p><strong>Additional Notes:</strong></p>
+
+<ul>
+<li><p>You may need to restart the networking service for the changes to take effect:</p>
+
+<p><strong>Debian, Ubuntu, Linux Mint:</strong>
+<code>
+service networking restart
+</code></p>
+
+<p><strong>Red Hat, CentOS, Fedora:</strong>
+<code>
+systemctl restart network
+</code></p></li>
+<li><p>If you encounter any issues, check the logs for errors:</p>
+
+<p><code>
+dmesg | tail
+</code></p></li>
+</ul>
+ </div>
+                
+            </section>
+            <section>
+                <br>
+                <div><p><strong>Conclusion:</strong></p>
+
+<p>Regardless of your Linux distribution, you can easily change the IP address of your network interface using the Terminal app. Whether you want to assign a static IP address for stability or configure DHCP for dynamic IP assignment, these methods provide simple and straightforward steps to effectively manage your network settings. By following these instructions, you can customize your network configuration to meet your specific requirements, ensuring seamless connectivity and optimal performance.</p>
+ </div>
+                
+            </section>
+        </main>
+        <aside id="right-ad">
+
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 Copyright belongs to Solulu4u</p>
+        <p>Contact: solulu4u@gmail.com</p>
+    </footer>
+</body>
+</html>
